@@ -4,7 +4,7 @@ import MailContent from "./MailContent";
 
 const EditComponent: React.FC<{ closeModal: () => void, isModalOpen: boolean }> = ({ closeModal, isModalOpen }) => {
   const [data, setData] = useState<Object[]>([
-    { content: "Hola este es el mail" },
+    { content: "Write your email here" },
   ]);
   useEffect(() => {
     const existingDataString = localStorage.getItem("myData");
